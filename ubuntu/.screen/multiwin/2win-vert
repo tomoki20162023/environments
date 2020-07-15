@@ -1,0 +1,5 @@
+split -v
+select 0
+focus right
+select 1
+

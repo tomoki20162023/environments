@@ -1,0 +1,6 @@
+source 2win-hori
+select 2
+focus up
+split -v
+focus right
+select 1

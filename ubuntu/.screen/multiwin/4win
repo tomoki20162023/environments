@@ -1,0 +1,5 @@
+source 2win-hori
+focus up
+source 2win-vert
+focus down
+source sub/2win-vert-2-3

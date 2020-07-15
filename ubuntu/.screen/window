@@ -1,0 +1,14 @@
+## Window class
+bind w eval 'command -c window' 'echo "Window Ops"'
+
+# create/remove window
+bind -c window c screen
+bind -c window x remove
+
+# split window
+bind -c window s split
+bind -c window v split -v
+
+# window
+bind -c window o only
+

@@ -1,0 +1,19 @@
+## set hardstatus
+setenv s ""
+setenv s "$s%{= KW}"
+setenv s "$s[%y/%m/%d %02c:%s] "
+setenv s "$s%L="
+setenv s "$s%{= kg}"
+setenv s "$s%-Lw "
+setenv s "$s%48L>"
+setenv s "$s%{= GK}"
+setenv s "$s%2n %t"
+setenv s "$s%{=r  }"
+setenv s "$s%+Lw "
+setenv s "$s%-17="
+setenv s "$s%{= KW}"
+setenv s "$s [%l]"
+
+hardstatus alwayslastline "$s"
+unsetenv s
+

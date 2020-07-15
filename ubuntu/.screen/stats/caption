@@ -1,0 +1,14 @@
+## set caption status
+setenv s ""
+setenv s "$s%?%F"
+setenv s "$s%{.Gk}"
+setenv s "$s%:"
+setenv s "$s%{.Kk}"
+setenv s "$s%?"
+setenv s "$s%3n %t "
+#setenv s "$s[%h]"
+setenv s "$s%?"
+
+caption splitonly "$s"
+unsetenv s
+

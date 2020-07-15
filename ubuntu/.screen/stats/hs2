@@ -1,0 +1,16 @@
+## set hardstatus
+setenv s ""
+setenv s "$s%{= GK}"
+setenv s "$s%-Lw"
+setenv s "$s%{gk}"
+setenv s "$s%50>"
+setenv s "$s%n%f* %t"
+setenv s "$s%{- GK}"
+setenv s "$s%+Lw "
+setenv s "$s$="
+setenv s "$s${-}"
+setenv s "$s%l"
+
+hardstatus alwayslastline "$s"
+unsetenv s
+
