@@ -1,0 +1,4 @@
+source 2win-vert
+split
+focus down
+select 2

@@ -1,0 +1,27 @@
+## Focus class
+
+##focus another region
+bind f eval 'command -c focus' 'echo "focus mode"'
+
+# next/previous
+bind -c focus n focus next
+bind -c focus p focus prev
+bind -c focus ^n eval 'command -c focus' 'focus next' 'echo "focus next"'
+bind -c focus ^p eval 'command -c focus' 'focus prev' 'echo "focus prev"'
+
+# up/down/left/right
+bind -c focus k focus up
+bind -c focus j focus down
+bind -c focus h focus left
+bind -c focus l focus right
+bind -c focus ^k eval 'command -c focus' 'focus up' 'echo "focus up"'
+bind -c focus ^j eval 'command -c focus' 'focus down' 'echo "focus down"'
+bind -c focus ^h eval 'command -c focus' 'focus left' 'echo "focus left"'
+bind -c focus ^l eval 'command -c focus' 'focus right' 'echo "focus right"'
+
+# top/bottom
+bind -c focus t focus top
+bind -c focus b focus bottom
+bind -c focus ^t eval 'command -c focus' 'focus top' 'echo "focus top"'
+bind -c focus ^b eval 'command -c focus' 'focus bottom' 'echo "focus bottom"'
+

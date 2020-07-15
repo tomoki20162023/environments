@@ -1,0 +1,12 @@
+## Print My Commands class
+bind P eval 'command -c pmc' 'echo "Print My Command"'
+
+# print my commands
+bind -c pmc p stuff "cat $HOME/.screen/printMyCommand\015"
+bind -c pmc q stuff "cat $HOME/.screen/quick\015"
+bind -c pmc f stuff "cat $HOME/.screen/focus\015"
+bind -c pmc l stuff "cat $HOME/.screen/layout\015"
+bind -c pmc r stuff "cat $HOME/.screen/resize\015"
+bind -c pmc s stuff "cat $HOME/.screen/status\015"
+bind -c pmc w stuff "cat $HOME/.screen/window\015"
+bind -c pmc m stuff "cat $HOME/.screen/multiwindow\015"

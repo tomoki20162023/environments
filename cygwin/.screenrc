@@ -1,0 +1,31 @@
+# encoding
+defutf8 on
+defencoding utf8
+encoding utf8 utf8
+
+# optional
+startup_message off
+vbell off
+escape ^Jj
+altscreen on
+
+# Enable detach
+autodetach on
+
+# scrolls
+defscrollback 5000
+termcapinfo xterm* ti@:te@
+
+# backtick
+
+
+# include settings
+source $HOME/.screen/printMyCommand
+source $HOME/.screen/quick
+source $HOME/.screen/resize
+source $HOME/.screen/focus
+source $HOME/.screen/layout
+source $HOME/.screen/window
+source $HOME/.screen/status
+source $HOME/.screen/multiwindow
+

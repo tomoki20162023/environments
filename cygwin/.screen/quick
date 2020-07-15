@@ -1,0 +1,6 @@
+## Quick command class
+bind q eval 'command -c quick' 'echo "Quick commands"'
+
+# quick commands
+bind -c quick a eval 'source $HOME/.screenrc' 'echo "Apply screen setting"'
+

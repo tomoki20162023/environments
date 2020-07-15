@@ -1,0 +1,9 @@
+## Resize class
+bind  r eval 'command -c resize' 'echo "Resize window"'
+
+# Resize window
+bind -c resize h eval 'command -c resize' 'resize -h -1'
+bind -c resize l eval 'command -c resize' 'resize -h +1'
+bind -c resize j eval 'command -c resize' 'resize -v +1'
+bind -c resize k eval 'command -c resize' 'resize -v -1'
+
