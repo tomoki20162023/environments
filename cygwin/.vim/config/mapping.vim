@@ -36,7 +36,7 @@ nnoremap gs :<C-u>%s///g<Left><Left><Left>
 nnoremap gs :%s///g<Left><Left><Left>
 
 " コマンドラインでのマッピング
-cnoremap <C-b> <Right>
+cnoremap <C-f> <Right>
 cnoremap <C-b> <Left>
 cnoremap <C-a> <C-b>
 cnoremap <C-e> <C-e>
