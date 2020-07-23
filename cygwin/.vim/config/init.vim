@@ -8,6 +8,9 @@ set nocompatible
 
 " noswapfile " スワップファイルを作成しない
 
+" ファイルフォーマットの認識順序設定
+set fileformats=dos,unix,mac
+
 " バッファは表示が破棄されるときに隠れる。複数ファイルの表示などでバッファが破棄されなくなる
 set hidden
 " コマンド履歴の保管数
