@@ -25,8 +25,8 @@ nnoremap te :tabedit
 nnoremap tc :tabclose<CR>
 nnoremap to :tabonly<CR>
 nnoremap tl :tabs<CR>
-nnoremap <C-p> gT<CR>
-nnoremap <C-n> gt<CR>
+nnoremap <C-p> gT
+nnoremap <C-n> gt
 nnoremap tf <C-w>gf
 
 " 引数リスト(args)で指定されているウィンドウの切り替え
