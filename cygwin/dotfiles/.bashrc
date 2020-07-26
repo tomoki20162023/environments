@@ -190,4 +190,8 @@ umask 033
 # tcl on x server
 export DISPLAY=:0.0
 
+export GTAGSCONF=${HOME}/.globalr
+export GTAGSLABEL='python3.8 -m pygments'
+#export GTAGSLABEL=ctags
+
 

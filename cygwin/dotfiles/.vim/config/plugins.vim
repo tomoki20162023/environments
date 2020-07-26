@@ -12,11 +12,7 @@ let g:quickrun_config = {
 \		'runner': 'vimproc',
 \		'runner/vimproc/updatetime': '60',
 \		'outputter/buffer/close_on_empty': '1',
-\		'outputter': 'quickfix'
-\	},
-\	'python': {
-\		'command': '/usr/bin/python3.8.exe',
+\		'outputter': 'quickfix',
 \	},
 \}
-
 

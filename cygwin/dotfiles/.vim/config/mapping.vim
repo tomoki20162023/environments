@@ -78,6 +78,11 @@ nnoremap ]q :cnext<CR>
 nnoremap [Q :cfirst<CR>
 nnoremap ]Q :clast<CR>
 
+" GNU globalのマップ
+nnoremap <Space>gt :Gtags
+nnoremap <Space>gh :Gtags -f %<CR>
+nnoremap <Space>gj :GtagsCursor<CR>
+
 " space c-?で<C-?>にしてみるか？(テスト中)
 nnoremap <silent> <Space>cw <C-w>
 

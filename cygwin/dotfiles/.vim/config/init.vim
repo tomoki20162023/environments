@@ -9,7 +9,7 @@ set nocompatible
 " noswapfile " スワップファイルを作成しない
 
 " ファイルフォーマットの認識順序設定
-set fileformats=unix,dos
+set fileformats=unix
 
 " ファイルエンコーディング
 set fileencodings=utf-8,sjis
