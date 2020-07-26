@@ -1,3 +1,6 @@
 [submodule "cygwin/dotfiles/.vim/pack/thinca/start/vim-quickrun"]
 	path = cygwin/dotfiles/.vim/pack/thinca/start/vim-quickrun
 	url = https://github.com/thinca/vim-quickrun.git
+[submodule "cygwin/dotfiles/.vim/pack/Shougo/start/vimproc"]
+	path = cygwin/dotfiles/.vim/pack/Shougo/start/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
