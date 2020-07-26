@@ -12,3 +12,8 @@ vim8から標準パッケージ管理あり
 $HOME/.vim/pack/package/start/plugin : 起動時にロード
 $HOME/.vim/pack/package/opt/plugin   : packadd pluginでロードする
 
+git submodule add http://~.git .vim/pack/~
+
+cloneするときは--recursiveを付けること
+
+
