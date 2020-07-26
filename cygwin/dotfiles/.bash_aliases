@@ -7,6 +7,7 @@ alias fgrep='fgrep --color=auto'              # show differences in colour
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -l'
 alias l.='ls --color=auto -lA'
+alias lA='ls --color=auto -A'
 
 alias python3='python3.8.exe'
 alias py3='python3.8.exe'
