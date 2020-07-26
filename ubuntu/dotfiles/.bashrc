@@ -111,7 +111,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ $(ls -1 /run/screen/S-t_ishikawa/ | wc -l) -lt 1 ]; then
+if [ $(ls -1 /run/screen/S-${USERNAME}/ | wc -l) -lt 1 ]; then
 	screen -D -RR -S default
 fi
 
