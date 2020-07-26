@@ -115,5 +115,9 @@ if [ $(ls -1 /run/screen/S-${USERNAME}/ | wc -l) -lt 1 ]; then
 	screen -D -RR -S default
 fi
 
+export PATH=${HOME}/.local/bin:${PATH}
 export GRAPHVIZ_DOT=/usr/bin/dot
+
+export GTAGSCONF=${HOME}/.globalr
+export GTAGSLABEL=pygments
 
