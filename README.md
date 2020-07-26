@@ -7,3 +7,8 @@ my environment setting for all system
 での環境設定。
 
 Windowsの環境をpushするのと、パッケージマネージャを導入するのはどちらが早いか・・・
+
+vim8から標準パッケージ管理あり
+$HOME/.vim/pack/package/start/plugin : 起動時にロード
+$HOME/.vim/pack/package/opt/plugin   : packadd pluginでロードする
+
