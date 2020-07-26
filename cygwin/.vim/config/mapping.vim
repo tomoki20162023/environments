@@ -14,48 +14,69 @@ nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
 nnoremap <Space>h ^
 nnoremap <Space>l $
 
-nnoremap <Space>w :<C-u>w<CR>
-nnoremap <Space>W :<C-u>wall<CR>
-nnoremap <Space>q :<C-u>q<CR>
-nnoremap <Space>Q :<C-u>q!<CR>
+nnoremap <Space>w :w<CR>
+nnoremap <Space>W :wall<CR>
+nnoremap <Space>q :q<CR>
+nnoremap <Space>Q :q!<CR>
 
 " タブ系のマップ
-nnoremap <Silent> tt :<C-u>tabedit<CR>
-nnoremap te :<C-u>tabedit 
-nnoremap tc :<C-u>tabclose<CR>
-nnoremap to :<C-u>tabonly<CR>
-nnoremap tl :<C-u>tabs<CR>
-nnoremap <C-p> gT
-nnoremap <C-n> gt
+nnoremap <Silent> tt :tabedit<CR>
+nnoremap te :tabedit 
+nnoremap tc :tabclose<CR>
+nnoremap to :tabonly<CR>
+nnoremap tl :tabs<CR>
+nnoremap <C-p> gT<CR>
+nnoremap <C-n> gt<CR>
 nnoremap tf <C-w>gf
 
+" 引数リスト(args)で指定されているウィンドウの切り替え
+nnoremap [a :previous<CR>
+nnoremap ]a :next<CR>
+nnoremap [A :first<CR>
+nnoremap ]A :last<CR>
+
+" タグ系のマップ
+nnoremap [t :tprevious<CR>
+nnoremap ]t :tnext<CR>
+nnoremap [T :tfirst<CR>
+nnoremap ]T :tlast<CR>
+
 " バッファ系のマップ
-nnoremap <Space>bu :<C-u>buffers<CR>
-nnoremap <Space>bn :<C-u>bnext<CR>
-nnoremap <Space>bp :<C-u>bprevious<CR>
-nnoremap <Space>bd :<C-u>bdelete 
+nnoremap <Space>bu :buffers<CR>
+nnoremap <Space>bd :bdelete 
+nnoremap [b :bprevious<CR>
+nnoremap ]b :bnext<CR>
+nnoremap [B :bfirst<CR>
+nnoremap ]B :blast<CR>
 
 " ウインドウ系のマップ
 " (silent space-w-?にしたいけど保存と被るしどうしよう)
-nnoremap <Space>rns :<C-u>new<CR>
-nnoremap <Space>rnv :<C-u>vnew<CR>
-nnoremap <Space>rs :<C-u>split<CR>
-nnoremap <Space>rv :<C-u>vsplit<CR>
-nnoremap <Space>rx :<C-u>close<CR>
-nnoremap <Space>ro :<C-u>only<CR>
+" r = regionのつもり
+nnoremap <Space>rns :new<CR>
+nnoremap <Space>rnv :vnew<CR>
+nnoremap <Space>rs :split<CR>
+nnoremap <Space>rv :vsplit<CR>
+nnoremap <Space>rx :close<CR>
+nnoremap <Space>ro :only<CR>
 " ウィンドウのフォーカス移動
-nnoremap <Space>rw <C-w>w
-nnoremap <Space>rh <C-w>h
-nnoremap <Space>rj <C-w>j
-nnoremap <Space>rk <C-w>k
-nnoremap <Space>rl <C-w>l
-nnoremap <Space>rt <C-w>t
-nnoremap <Space>rb <C-w>b
+nnoremap <Space>fw <C-w>w
+nnoremap <Space>fh <C-w>h
+nnoremap <Space>fj <C-w>j
+nnoremap <Space>fk <C-w>k
+nnoremap <Space>fl <C-w>l
+nnoremap <Space>ft <C-w>t
+nnoremap <Space>fb <C-w>b
 " ウィンドウの移動
-nnoremap <Space>rH <C-w>H
-nnoremap <Space>rJ <C-w>J
-nnoremap <Space>rK <C-w>K
-nnoremap <Space>rL <C-w>L
+nnoremap <Space>mH <C-w>H
+nnoremap <Space>mJ <C-w>J
+nnoremap <Space>mK <C-w>K
+nnoremap <Space>mL <C-w>L
+
+" Quickfixのマップ
+nnoremap [q :cprevious<CR>
+nnoremap ]q :cnext<CR>
+nnoremap [Q :cfirst<CR>
+nnoremap ]Q :clast<CR>
 
 " space c-?で<C-?>にしてみるか？(テスト中)
 nnoremap <silent> <Space>cw <C-w>
@@ -69,7 +90,6 @@ nnoremap Q gq
 inoremap jk <ESC>
 
 " 置換コマンドの短縮
-nnoremap gs :<C-u>%s///g<Left><Left><Left>
 nnoremap gs :%s///g<Left><Left><Left>
 
 " コマンドラインでのマッピング
