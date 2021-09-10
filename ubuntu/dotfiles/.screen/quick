@@ -3,4 +3,33 @@ bind q eval 'command -c quick' 'echo "Quick commands"'
 
 # quick commands
 bind -c quick a eval 'source $HOME/.screenrc' 'echo "Apply screen setting"'
+bind -c quick d eval 'source $HOME/.screen/temp/develop' 'echo "set development env"'
+bind -c quick m eval 'command -c quickmove' 'echo "Quick Move commands"'
+
+bind -c quick r eval 'command -c rails' 'echo "rails quick command"'
+
+# quick move commands
+bind -c quickmove c eval 'stuff "source mv_csharp.sh\n"'
+bind -c quickmove g eval 'stuff "source mv_groovy.sh\n"'
+bind -c quickmove j eval 'command -c qmdh' 'echo "a [java], q [jQuery]"'
+bind -c quickmove p eval 'stuff "source mv_python.sh\n"'
+bind -c quickmove r eval 'command -c qmdh' 'echo "b [ruby], s [rust]"'
+bind -c quickmove t eval 'stuff "source mv_tcltk.sh\n"'
+bind -c quickmove s eval 'stuff "source mv_scala.sh\n"'
+
+#bind -c quickmove x eval 'stuff "source mv_x.sh\n"'
+
+# qmdh (quick move duplicate head class)
+bind -c qmdh a eval 'stuff "source mv_java.sh\n"'
+bind -c qmdh q eval 'stuff "source mv_jquery.sh\n"'
+bind -c qmdh b eval 'stuff "source mv_ruby.sh\n"'
+bind -c qmdh s eval 'stuff "source mv_rust.sh\n"'
+
+# rails quick command
+bind -c rails n eval 'select 0' 'stuff "rails new\n"' 'select 1'
+bind -c rails s eval 'select 0' 'stuff "rails server\n"' 'select 1'
+bind -c rails t eval 'select 0' 'stuff "rails test\n"' 'select 1'
+bind -c rails i eval 'select 0' 'stuff "rails test:integration\n"' 'select 1'
+bind -c rails m eval 'select 0' 'stuff "rails test:models\n"' 'select 1'
+bind -c rails b eval 'select 0' 'stuff "bundle install\n"' 'select 1'
 

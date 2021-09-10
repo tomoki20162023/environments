@@ -31,11 +31,11 @@ set showcmd
 " set expandtab " 入力モード時に、Tabをスペースに変換して入力
 
 " '>>', '<<'で増減されるインデント幅の設定
-set shiftwidth=4
+set shiftwidth=2
 " Tabキーを押したときに、挿入される文字幅を設定
-set softtabstop=4
+set softtabstop=2
 " ファイル内にあるタブ文字の表示幅
-set tabstop=4
+set tabstop=2
 " 改行時に入力された行の末尾に合わせて、次の行のインデントを増減する
 set smartindent
 

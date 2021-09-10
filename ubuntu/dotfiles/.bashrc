@@ -57,9 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\n\[\033[01;34m\]\w\[\033[00m\]\n\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\n\w\n\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -111,7 +111,50 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ "$(ls -1 /run/screen/S-t_ishikawa/ | wc -l)" -lt 1 ]; then
+# -----------------
+### User Settings
+# -----------------
+
+## anyenv
+if [ -d ${HOME}/.anyenv ]; then
+	export PATH="${HOME}/.anyenv/bin:${PATH}"
+	eval "$(anyenv init -)"
+fi
+
+## phpenv
+# ビルド時に複数スレッドでphp-buildを動かすオプション
+#export PHP_BUILD_EXTRA_MAKE_ARGUMENTS=-j4
+
+## Haskell/Stack
+export PATH="${HOME}/.local/bin:${PATH}"
+eval "$(stack --bash-completion-script stack)"
+
+## Rust / Cargo
+export PATH="${HOME}/.cargo/bin:${PATH}"
+
+## screen
+if [ ! -z "${WSLENV}" ]; then
+	if [ -z "${SCREENDIR}" ]; then
+		export SCREENDIR=/tmp/screens/S-${USER}/
+	fi
+
+	if [ "$(ls -1 ${SCREENDIR} | wc -l)" -lt 1 ]; then
+		screen -D -RR -S default
+	fi
+
+elif [ "$(ls -1 /run/screen/S-t_ishikawa/ | wc -l)" -lt 1 ]; then
 	screen -D -RR -S default
 fi
+
+if [ ! -z "${WSLENV}" ]; then
+	cd ${HOME}
+fi
+
+## groovy用にjava_home設定
+export JAVA_HOME=/usr/lib/jvm/java-14-openjdk-amd64
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/t_ishikawa/.sdkman"
+[[ -s "/home/t_ishikawa/.sdkman/bin/sdkman-init.sh" ]] && source "/home/t_ishikawa/.sdkman/bin/sdkman-init.sh"
 

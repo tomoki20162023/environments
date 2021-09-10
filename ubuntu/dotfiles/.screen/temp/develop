@@ -1,0 +1,5 @@
+title run
+stuff "cd ~/favorites\n"
+screen
+title edit
+stuff "cd ~/favorites\n"

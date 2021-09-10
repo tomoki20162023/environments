@@ -1,5 +1,6 @@
 ## Window class
 bind w eval 'command -c window' 'echo "Window Ops"'
+bind e eval 'stuff "exit\n"'
 
 # create/remove window
 bind -c window c screen

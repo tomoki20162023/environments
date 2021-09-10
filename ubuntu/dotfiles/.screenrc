@@ -19,7 +19,7 @@ termcapinfo xterm* ti@:te@
 # backtick
 
 
-# include settings
+# include key bind settings
 source $HOME/.screen/printMyCommand
 source $HOME/.screen/quick
 source $HOME/.screen/resize
@@ -28,4 +28,7 @@ source $HOME/.screen/layout
 source $HOME/.screen/window
 source $HOME/.screen/multiwindow
 source $HOME/.screen/status
+
+# default view
+source $HOME/.screen/default-view
 

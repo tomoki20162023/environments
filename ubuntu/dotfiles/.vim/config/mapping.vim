@@ -1,6 +1,6 @@
 " --------------------------------------------------
 " キーバインドの設定とコマンド定義
-"	サイズが大きくなってきたら分割する
+" サイズが大きくなってきたら分割する
 " --------------------------------------------------
 
 "
@@ -46,19 +46,21 @@ nnoremap <Space>bu :buffers<CR>
 nnoremap <Space>bd :bdelete 
 nnoremap [b :bprevious<CR>
 nnoremap ]b :bnext<CR>
-nnoremap [B :bfirst<CR>
-nnoremap ]B :blast<CR>
-
 " ウインドウ系のマップ
 " (silent space-w-?にしたいけど保存と被るしどうしよう)
-" r = regionのつもり
+" region
 nnoremap <Space>rns :new<CR>
 nnoremap <Space>rnv :vnew<CR>
 nnoremap <Space>rs :split<CR>
 nnoremap <Space>rv :vsplit<CR>
 nnoremap <Space>rx :close<CR>
 nnoremap <Space>ro :only<CR>
-" ウィンドウのフォーカス移動
+" sizing
+nnoremap <Space>rh :vertical resize +10<CR>
+nnoremap <Space>rl :vertical resize -10<CR>
+nnoremap <Space>rj :resize +10<CR>
+nnoremap <Space>rk :resize -10<CR>
+" forcus : ウィンドウのフォーカス移動
 nnoremap <Space>fw <C-w>w
 nnoremap <Space>fh <C-w>h
 nnoremap <Space>fj <C-w>j
@@ -66,7 +68,7 @@ nnoremap <Space>fk <C-w>k
 nnoremap <Space>fl <C-w>l
 nnoremap <Space>ft <C-w>t
 nnoremap <Space>fb <C-w>b
-" ウィンドウの移動
+" move : ウィンドウの移動
 nnoremap <Space>mH <C-w>H
 nnoremap <Space>mJ <C-w>J
 nnoremap <Space>mK <C-w>K
@@ -89,8 +91,10 @@ nnoremap Q gq
 " エスケープしやすいように
 inoremap jk <ESC>
 
-" 置換コマンドの短縮
+" 全体置換コマンドの短縮
 nnoremap gs :%s///g<Left><Left><Left>
+nnoremap gcs :set noexpandtab<CR>:retab!<CR>
+nnoremap gct :set expandtab<CR>:retab<CR>
 
 " コマンドラインでのマッピング
 cnoremap <C-f> <Right>

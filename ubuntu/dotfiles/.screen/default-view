@@ -1,0 +1,14 @@
+screen
+screen
+layout new 0
+layout select 0
+layout title 2vert
+source $HOME/.screen/multiwin/2win-vert
+select 0
+focus right
+select 1
+focus left1
+layout new 1
+layout select 1
+layout title only
+select 0

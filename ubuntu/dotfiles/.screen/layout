@@ -4,8 +4,8 @@
 bind l eval 'command -c layout' 'layout show'
 
 # Create/Remove layout
-bind -c layout c eval 'command -c layout' 'layout new' 'layout show'
-bind -c layout x eval 'command -c layout' 'layout remove' 'layout show'
+bind -c layout c eval 'layout new' 'layout show'
+bind -c layout x eval 'layout remove' 'layout show'
 
 # Modify title / show number
 bind -c layout T colon 'layout title'
