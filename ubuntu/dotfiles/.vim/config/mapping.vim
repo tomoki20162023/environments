@@ -80,6 +80,9 @@ nnoremap ]q :cnext<CR>
 nnoremap [Q :cfirst<CR>
 nnoremap ]Q :clast<CR>
 
+" QuickRunのマップ
+nnoremap \r :QuickRun<CR>
+
 " space c-?で<C-?>にしてみるか？(テスト中)
 nnoremap <silent> <Space>cw <C-w>
 
@@ -108,6 +111,7 @@ cnoremap <C-v> <C-f>a
 "
 " ### コマンド定義
 "
-command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+" 使ってないのでとりあえずつぶしておく
+" command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
 

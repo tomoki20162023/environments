@@ -138,7 +138,7 @@ if [ ! -z "${WSLENV}" ]; then
 		export SCREENDIR=/tmp/screens/S-${USER}/
 	fi
 
-	if [ "$(ls -1 ${SCREENDIR} | wc -l)" -lt 1 ]; then
+	if [ "$(screen -list | tail -n1 | wc -w)" -eq 0 ]; then
 		screen -D -RR -S default
 	fi
 
