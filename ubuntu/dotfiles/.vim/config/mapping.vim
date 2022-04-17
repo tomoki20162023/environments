@@ -74,6 +74,14 @@ nnoremap <Space>mJ <C-w>J
 nnoremap <Space>mK <C-w>K
 nnoremap <Space>mL <C-w>L
 
+" vimgrepのマップ
+nnoremap <Space>cn :cnext<CR>
+nnoremap <Space>cN :cprevious<CR>
+nnoremap <Space>cp :cprevious<CR>
+nnoremap <Space>cP :cnext<CR>
+nnoremap <Space>cf :cfirst<CR>
+nnoremap <Space>cl :clast<CR>
+
 " Quickfixのマップ
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>

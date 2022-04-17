@@ -16,3 +16,6 @@ set history=20
 " Windowsでパスの区切り文字をスラッシュで扱う
 " set shellslash
 
+" quickfix-windowのフックイベント
+autocmd QuickFixCmdPost *grep* cwindow
+
