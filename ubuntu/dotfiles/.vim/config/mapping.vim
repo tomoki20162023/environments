@@ -21,6 +21,7 @@ nnoremap <Space>Q :q!<CR>
 
 " タブ系のマップ
 nnoremap <Silent> tt :tabedit<CR>
+nnoremap tn :tabnew<CR>
 nnoremap te :tabedit 
 nnoremap tc :tabclose<CR>
 nnoremap to :tabonly<CR>
@@ -43,7 +44,7 @@ nnoremap ]T :tlast<CR>
 
 " バッファ系のマップ
 nnoremap <Space>bu :buffers<CR>
-nnoremap <Space>bd :bdelete 
+nnoremap <Space>bd :buffers<CR>:bdelete 
 nnoremap [b :bprevious<CR>
 nnoremap ]b :bnext<CR>
 " ウインドウ系のマップ
@@ -61,18 +62,18 @@ nnoremap <Space>rl :vertical resize -10<CR>
 nnoremap <Space>rj :resize +10<CR>
 nnoremap <Space>rk :resize -10<CR>
 " forcus : ウィンドウのフォーカス移動
-nnoremap <Space>fw <C-w>w
-nnoremap <Space>fh <C-w>h
-nnoremap <Space>fj <C-w>j
-nnoremap <Space>fk <C-w>k
-nnoremap <Space>fl <C-w>l
-nnoremap <Space>ft <C-w>t
-nnoremap <Space>fb <C-w>b
+"nnoremap <Space>fw <C-w>w
+"nnoremap <Space>fh <C-w>h
+"nnoremap <Space>fj <C-w>j
+"nnoremap <Space>fk <C-w>k
+"nnoremap <Space>fl <C-w>l
+"nnoremap <Space>ft <C-w>t
+"nnoremap <Space>fb <C-w>b
 " move : ウィンドウの移動
-nnoremap <Space>mH <C-w>H
-nnoremap <Space>mJ <C-w>J
-nnoremap <Space>mK <C-w>K
-nnoremap <Space>mL <C-w>L
+"nnoremap <Space>mH <C-w>H
+"nnoremap <Space>mJ <C-w>J
+"nnoremap <Space>mK <C-w>K
+"nnoremap <Space>mL <C-w>L
 
 " vimgrepのマップ
 nnoremap <Space>cn :cnext<CR>
